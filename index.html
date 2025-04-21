@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Café com pão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="smoke-container"></div>
+    <script src="script.js"></script>       
+    <header class="header">
+        <section>
+
+            <a href="#" class="logo">
+                <img width="100" height="100" src="img/logo.png" alt="Logo do Café com pão">
+            </a>
+
+            <nav class="navbar">
+                <a href="#inicio">Ínicio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#endereco">Endereço</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+        </section>
+
+    </header>
+
+    <div class="inicio_container">
+        <section id="inicio">
+            <div class="content">
+                <h3>SABOR E ACONCHEGO NO SEU DIA</h3>
+                <p>No coração da cidade, o Café com Pão é aquele cantinho perfeito para tomar um cafezinho quentinho com
+                    um pão na chapa, trocar ideia, relaxar e esquecer da correria. Aqui, o cheiro de café fresco e o
+                    carinho no atendimento são marca registrada. Chega mais, sinta-se em casa.</p>
+                <a href="#" class="button">Saiba Mais</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="sobre" id="sobre">
+        <h2 class="title">Sobre Nós</h2>
+        <div class="row">
+            <div class="sobre_img">
+                <img width="400" src="./img/chásobrenos.png" alt="">
+            </div>
+            <div class="content">
+                <h3>De onde surgimos</h3>
+                <p>O Café com Pão nasceu com o desejo de criar um espaço acolhedor, simples e cheio de sabor. Aqui, acreditamos que um bom café e um pão quentinho podem transformar o dia de qualquer pessoa.
+                    Valorizamos os detalhes: o atendimento com carinho, o cheirinho de café fresco, o ambiente tranquilo e aquele clima de casa de vó.
+                    Mais do que uma cafeteria, somos um ponto de encontro para quem busca aconchego, boas conversas e momentos de pausa no meio da correria.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2 class="title">Nossos Produtos</h2>
+        <div class="box-container">
+            <div class="box">
+                <img height="100" src="./img/latte.png" alt="latte">
+                <h3>Latte</h3>
+                <div class="desc">Espresso com bastante leite vaporizado e pouca espuma. Bem suave.</div>
+            </div>
+            <div class="box">
+                <img height="100" src="./img/cappucino.png" alt="latte">
+                <h3>Cappucino</h3>
+                <div class="desc">Espresso com leite e bastante espuma. Equilibrado e cremoso.</div>
+            </div>
+            <div class="box">
+                <img height="100" src="./img/flat white.png" alt="latte">
+                <h3>Flat White</h3>
+                <div class="desc">Espresso com pouco leite e microespuma fina. Sabor mais forte.</div>
+            </div>
+            <div class="box">
+                <img height="100" src="./img/espresso.png" alt="latte">
+                <h3>Espresso</h3>
+                <div class="desc">Café puro e forte. Sem leite, direto e concentrado.</div>
+            </div>
+            <div class="box">
+                <img height="100" src="./img/macchiato.png" alt="latte">
+                <h3>Macchiato</h3>
+                <div class="desc">Espresso com só um pingo de espuma de leite. Mais intenso.</div>
+            </div>
+            <div class="box">
+                <img height="100" src="./img/mocha.png" alt="latte">
+                <h3>Mocha</h3>
+                <div class="desc">Espresso com leite e chocolate. Doce e cremoso, tipo sobremesa.</div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="endereco" id="endereco">
+        <h2 class="title">Nosso Endereço</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.1234567890123!2d-46.12345678901234!3d-23.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0x1234567890abcdef!2sCaf%C3%A9%20com%20P%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1234567890123456" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h1>Café com Pão.
+                Rua das Amendoeiras, nº 1287
+                Bairro Jardim do Sol.
+                Cidade de São Valentim.
+                Estado de Monte Brisa.
+                CEP: 98765-432</h1>
+        
+    </section>
+
+    <section id="contato">
+        <h2>Fale conosco</h2>
+        <p>Quer bater um papo, mandar um elogio ou uma sugestão ou uma reclamação? Preencha aí:</p>
+        
+        <form>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@email.com" required />
+    
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Escreve sua mensagem aqui..." rows="5" required></textarea>
+    
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <footer class="footer"><h4>Por: Daniel Silva Mendanha</h4>
+        <p>Contato: danielsmendanhaa@gmail.com</p>
+            <p class="dddd">Engenharia de Software 1° Período</p>
+      </footer>
+</body>
+
+</html>
